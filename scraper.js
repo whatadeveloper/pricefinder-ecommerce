@@ -26,15 +26,15 @@ function parsePrice($) {
     return parseFloat(priceString);
 }
 
-// function parseMrp($) {
-//     //parses the price from DOM
-//     for (let selector of config.mrpSelectors) {
-//         var selectedText = $(selector).text();
-//         if (selectedText) { break; }
-//     }
-//     let priceString = selectedText.replace(config.priceReplRegex, "");
-//     return parseFloat(priceString);
-// }
+function parseMrp($) {
+    //parses the price from DOM
+    for (let selector of config.mrpSelectors) {
+        var selectedText = $(selector).text();
+        if (selectedText) { break; }
+    }
+    let priceString = selectedText.replace(config.priceReplRegex, "");
+    return parseFloat(priceString);
+}
 
 function parseImage($) {
     //parses the price from DOM
